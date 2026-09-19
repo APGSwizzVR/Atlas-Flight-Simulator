@@ -1,37 +1,29 @@
 # Atlas Flight Simulator
 
-Official website for **Atlas Flight Simulator (Atlas FS)**, a Roblox flight simulator currently at the very beginning of development.
+Official Atlas FS website for the Roblox flight simulator.
 
-## Website
-
-Static HTML/CSS/JS landing page with:
-- Apple-inspired liquid-glass visual system
-- Aviation-focused hero section
-- Subtle aircraft animation
+### Included
+- Apple / modern MSFS-inspired liquid glass interface
+- Scroll-reactive procedural Earth canvas
+- Star field and atmospheric hero
+- Interactive cards with subtle 3D pointer response
+- Reveal-on-scroll animations
+- Cockpit visual section
+- World / Earth section
+- Development timeline
+- Discord + Buy Me a Coffee CTAs
 - Responsive mobile layout
-- Experience/features section
-- Development roadmap
-- Community CTA
-- Discord and Buy Me a Coffee buttons
-- No game link yet — Atlas FS is **Coming Soon**
+- No fake game link: Atlas FS remains Coming Soon
 
-## Configure links
-
-Open `script.js` and set:
-
+### Configure links
+Edit `config.js`:
 ```js
-const CONFIG={
-  DISCORD_URL:"YOUR_DISCORD_INVITE",
-  COFFEE_URL:"YOUR_BUY_ME_A_COFFEE_PAGE"
+window.ATLAS_CONFIG={
+  DISCORD_URL:"",
+  COFFEE_URL:""
 };
 ```
 
-Until those URLs are configured, the buttons intentionally show a Coming Soon modal rather than using fake links.
+Leave either field empty until the real URL exists. The site will show a Coming Soon modal instead of a fake destination.
 
-## Run locally
-
-Open `index.html` directly, or serve the folder with any static web server.
-
-## Deployment
-
-The project is designed to deploy as a static site on Vercel with no build step.
+Static site. No build step required.
