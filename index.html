@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07101c">
+  <meta name="description" content="Atlas Flight Simulator — a Roblox flight simulator built around immersive flying, beautiful skies and a modern aviation experience.">
+  <title>Atlas Flight Simulator — Atlas FS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Atlas Flight Simulator home">
+      <span class="brand-mark">A</span>
+      <span><strong>Atlas</strong><small>Flight Simulator</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#experience">Experience</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#community">Community</a>
+    </nav>
+    <button class="glass-button compact" data-action="discord">Join Discord</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-sky"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> Atlas FS · In development</div>
+        <h1>Fly beyond<br><span>the ordinary.</span></h1>
+        <p class="hero-text">A new Roblox flight simulator focused on the feeling of flight — from the cockpit to the clouds.</p>
+        <div class="hero-actions">
+          <button class="primary-button" data-action="discord">Join the community <span>↗</span></button>
+          <a class="secondary-button" href="#experience">Explore Atlas FS <span>↓</span></a>
+        </div>
+      </div>
+
+      <div class="aircraft-stage" aria-hidden="true">
+        <div class="horizon"></div>
+        <div class="cloud cloud-one"></div>
+        <div class="cloud cloud-two"></div>
+        <div class="aircraft">
+          <div class="fuselage"></div>
+          <div class="wing wing-left"></div>
+          <div class="wing wing-right"></div>
+          <div class="tail"></div>
+          <div class="engine engine-left"></div>
+          <div class="engine engine-right"></div>
+        </div>
+        <div class="flight-line"></div>
+        <div class="altitude-card glass-card">
+          <span>ATLAS FS</span>
+          <strong>COMING SOON</strong>
+          <small>Roblox Flight Simulator</small>
+        </div>
+      </div>
+
+      <div class="scroll-cue">Scroll to descend <span></span></div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">The idea</span>
+          <h2>Built around<br>the flight.</h2>
+        </div>
+        <p>Atlas FS is being designed as a clean, modern aviation experience rather than another cluttered Roblox flight game.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card glass-card large">
+          <div class="feature-icon">✦</div>
+          <div>
+            <span class="card-label">01 · Atmosphere</span>
+            <h3>Feel the sky.</h3>
+            <p>Open skies, dramatic approaches and a visual style designed to make every flight feel like a journey.</p>
+          </div>
+          <div class="card-orbit"></div>
+        </article>
+        <article class="feature-card glass-card">
+          <div class="feature-icon">⌁</div>
+          <span class="card-label">02 · Flying</span>
+          <h3>Made for pilots.</h3>
+          <p>Flight-focused systems with room to grow into a deeper simulator over time.</p>
+        </article>
+        <article class="feature-card glass-card">
+          <div class="feature-icon">◌</div>
+          <span class="card-label">03 · World</span>
+          <h3>Explore.</h3>
+          <p>A world built around memorable routes, airports and places worth flying to.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section aircraft-section">
+      <div class="cockpit-card glass-card">
+        <div class="cockpit-glow"></div>
+        <div class="instrument">
+          <span class="instrument-title">FLIGHT DECK</span>
+          <div class="attitude"><div class="horizon-line"></div><div class="aircraft-symbol">⌃</div></div>
+          <div class="instrument-readouts"><span>SPD <b>—</b></span><span>ALT <b>—</b></span><span>HDG <b>—</b></span></div>
+        </div>
+        <div class="cockpit-copy">
+          <span class="eyebrow">Designed for aviation</span>
+          <h2>The cockpit<br>is the experience.</h2>
+          <p>Atlas FS starts with the fundamentals: a convincing flight environment, a strong visual identity and a platform that can expand with the community.</p>
+          <span class="status-pill"><i></i> Development has just begun</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section roadmap" id="roadmap">
+      <div class="section-heading centered">
+        <span class="eyebrow">Development</span>
+        <h2>Early days.<br>Big ambitions.</h2>
+        <p>There is no released build yet. Atlas FS is currently at the beginning of development, and the website will evolve alongside the simulator.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item active">
+          <span class="timeline-dot"></span>
+          <small>NOW</small>
+          <h3>Foundation</h3>
+          <p>Concept, visual direction and the core flight-sim foundation.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <small>NEXT</small>
+          <h3>Prototype</h3>
+          <p>First playable systems, aircraft work and early environments.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <small>LATER</small>
+          <h3>Public testing</h3>
+          <p>Community testing will begin when there is a meaningful build to fly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section community" id="community">
+      <div class="community-card glass-card">
+        <div>
+          <span class="eyebrow">Atlas community</span>
+          <h2>Get on board<br>from day one.</h2>
+          <p>Follow development, talk aviation and be there when Atlas FS is ready to fly.</p>
+        </div>
+        <div class="community-actions">
+          <button class="primary-button" data-action="discord">Discord <span>↗</span></button>
+          <button class="secondary-button" data-action="coffee">Buy Me a Coffee <span>↗</span></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="brand footer-brand"><span class="brand-mark">A</span><span><strong>Atlas</strong><small>Flight Simulator</small></span></div>
+    <span>Atlas FS · Roblox Flight Simulator · Coming Soon</span>
+    <span>© <span id="year"></span> Atlas FS</span>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel glass-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" data-close-modal aria-label="Close">×</button>
+      <span class="eyebrow" id="modal-eyebrow">Atlas FS</span>
+      <h2 id="modal-title">Coming soon.</h2>
+      <p id="modal-text">This link has not been configured yet. Atlas FS is still at the beginning of development.</p>
+      <button class="primary-button" data-close-modal>Back to Atlas FS</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
