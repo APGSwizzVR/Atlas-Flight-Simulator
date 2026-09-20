@@ -1,1 +1,145 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Atlas Flight Simulator</title><meta name="description" content="Atlas Flight Simulator — aircraft, systems and global flight for Roblox."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css?v=atlas4"></head><body><header><a class="brand" href="#top"><b>A</b><span>ATLAS<small>FLIGHT SIMULATOR</small></span></a><nav><a href="#systems">Systems</a><a href="#fleet">Fleet</a><a href="#world">World</a><a href="#community">Community</a></nav><button data-social="discord">Discord ↗</button></header><main id="top"><section class="hero"><div class="hero-bg"></div><div class="hero-overlay"></div><div class="hero-content"><label>ATLAS FS · ROBLOX FLIGHT SIMULATOR</label><h1>Fly<br><i>beyond.</i></h1><p>Aircraft. Systems. Navigation. A shared sky. Atlas is being built as a complete flight simulation experience for Roblox.</p><div><button class="light" data-scroll="#systems">Explore Atlas ↓</button><button class="dark" data-social="discord">Join Discord ↗</button></div></div><footer class="hero-meta"><span>IN DEVELOPMENT</span><span>ROBLOX</span><span>COMING SOON</span></footer></section><section class="split"><div><label>THE EXPERIENCE</label><h2>Everything around<br><i>the flight</i> matters.</h2></div><p>Atlas is more than an aircraft selector. Prepare the aircraft, plan the route, manage the systems, navigate the world and operate alongside other pilots.</p></section><section class="cards"><article class="big"><div class="earth"></div><label>01</label><h3>A world built<br>for flying.</h3><p>Optimized destinations, detailed airport layouts and an expanding world designed for Roblox.</p></article><article><div class="radar"></div><label>02</label><h3>Plan every<br>flight.</h3><p>Routes, navigation data, departure and arrival information in one operational flow.</p></article><article><div class="display"><b>SPD 245</b><b>ALT 12,040</b><b>HDG 270°</b></div><label>03</label><h3>Systems<br>matter.</h3><p>Aircraft-specific cockpits, flight controls and system behaviour are central to the design.</p></article></section><section class="systems" id="systems"><div class="head"><div><label>SYSTEMS</label><h2>Built around the<br><i>way pilots fly.</i></h2></div><p>Atlas is structured around realistic aviation workflows without unnecessary complexity.</p></div><div class="system-list"><article><span>01</span><div><h3>Flight Planning</h3><p>Build departures, routes, arrivals and operational plans before leaving the gate.</p></div><b>↗</b></article><article><span>02</span><div><h3>Navigation</h3><p>GPS, ILS, VOR and procedure-focused navigation concepts for route flying.</p></div><b>↗</b></article><article><span>03</span><div><h3>Aircraft Systems</h3><p>Functional cockpit interaction, autopilot concepts, engines and aircraft-specific controls.</p></div><b>↗</b></article><article><span>04</span><div><h3>Weather & Atmosphere</h3><p>Time of day, clouds, wind and atmospheric presentation designed to change each flight.</p></div><b>↗</b></article><article><span>05</span><div><h3>Multiplayer & ATC</h3><p>A shared sky with structured communication and room for community operations.</p></div><b>↗</b></article><article><span>06</span><div><h3>Logbook & Operations</h3><p>Aircraft history, flight records and operational information tied to your Atlas profile.</p></div><b>↗</b></article></div></section><section class="statement"><h2>ONE WORLD.<br><i>THOUSANDS OF FLIGHTS.</i></h2></section><section class="fleet" id="fleet"><div class="head"><div><label>OUR FLEET</label><h2>Choose your<br><i>aircraft.</i></h2></div><div class="filters"><button class="active" data-filter="all">All</button><button data-filter="Boeing">Boeing</button><button data-filter="Airbus">Airbus</button><button data-filter="Embraer">Embraer</button><button data-filter="ATR">ATR</button><button data-filter="CRJ">CRJ</button></div></div><div class="fleet-grid" id="fleetGrid"></div></section><section class="world" id="world"><div class="world-globe"></div><div class="world-copy"><label>GLOBAL FLIGHT</label><h2>From Ireland<br>to <i>anywhere.</i></h2><p>Atlas starts focused and optimized, with destinations expanding as development progresses.</p><div class="route"><b>DUB</b><span></span><b>FNC</b><small>IRELAND → MADEIRA</small></div></div></section><section class="ops"><div class="head"><div><label>OPERATIONS</label><h2>A flight is more than<br><i>takeoff and landing.</i></h2></div></div><div class="ops-grid"><article><small>FLIGHT DECK</small><h3>Configure.</h3><p>Aircraft setup, cockpit interaction and pre-flight workflows.</p></article><article><small>ROUTE</small><h3>Plan.</h3><p>Build a route and understand the operation before departure.</p></article><article><small>LIVE SKY</small><h3>Operate.</h3><p>Fly alongside other pilots as multiplayer systems mature.</p></article><article><small>LOGBOOK</small><h3>Remember.</h3><p>Keep a record of the aircraft and flights that make up your Atlas journey.</p></article></div></section><section class="community" id="community"><div><label>COMMUNITY</label><h2>Fly with us<br><i>from day one.</i></h2><p>Follow development, aircraft previews, destination updates and release news.</p></div><div class="socials"><button data-social="youtube">YouTube ↗</button><button data-social="tiktok">TikTok ↗</button><button data-social="instagram">Instagram ↗</button><button data-social="x">X ↗</button><button data-social="discord">Discord ↗</button><button data-social="coffee">Buy Me a Coffee ↗</button></div></section></main><footer class="site-footer"><span>© <b id="year"></b> Atlas Flight Simulator</span><span>ROBLOX · IN DEVELOPMENT</span></footer><div class="modal" id="modal"><div><button id="close">×</button><label>ATLAS FS</label><h3>Coming soon.</h3><p>This link has not been configured yet.</p></div></div><script src="config.js?v=atlas4"></script><script src="app.js?v=atlas4"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Atlas Flight Simulator</title>
+  <meta name="description" content="Atlas Flight Simulator — a cinematic Roblox flight simulator built around aircraft, systems, routes and a shared world.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=atlas6">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="nav" id="nav">
+    <a class="wordmark" href="#top"><span class="mark">A</span><span>ATLAS</span></a>
+    <nav class="desktop-nav">
+      <a href="#experience">Experience</a>
+      <a href="#fleet">Fleet</a>
+      <a href="#systems">Systems</a>
+      <a href="#world">World</a>
+      <a href="#community">Community</a>
+    </nav>
+    <button class="nav-cta" data-social="discord">Join Discord</button>
+    <button class="menu" aria-label="Open menu"><i></i><i></i></button>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="experience">
+      <div class="hero-media">
+        <img class="hero-plane" src="https://cdn.plnspttrs.net/05609/ly-mgm-marabu-airlines-boeing-737-8eh-wl_PlanespottersNet_1775954_eb2d2a2a00_o.jpg" alt="Boeing 737 in flight">
+        <div class="hero-sky"></div>
+        <div class="hero-vignette"></div>
+        <div class="sun-glow"></div>
+        <div class="cloud cloud-a"></div><div class="cloud cloud-b"></div><div class="cloud cloud-c"></div>
+      </div>
+      <div class="hero-copy">
+        <div class="eyebrow reveal">ATLAS FS <span>·</span> ROBLOX FLIGHT SIMULATOR</div>
+        <h1 class="reveal delay-1">Fly beyond<span>.</span></h1>
+        <p class="hero-lead reveal delay-2">A flight simulator built around the aircraft, the systems and everything between departure and landing.</p>
+        <div class="hero-actions reveal delay-3">
+          <a class="button button-light" href="#fleet">Explore the fleet <span>↗</span></a>
+          <button class="button button-glass" data-social="discord">Join the community</button>
+        </div>
+      </div>
+      <div class="hero-status reveal delay-3"><span class="pulse"></span> IN DEVELOPMENT <b>·</b> COMING SOON</div>
+      <div class="scroll-cue"><span></span> SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="statement reveal-section">
+      <div class="eyebrow">THE EXPERIENCE</div>
+      <h2>Take the controls.<br><em>Make the flight yours.</em></h2>
+      <p>Atlas is being designed as a complete aviation experience for Roblox — from configuring the aircraft and building the route to operating it in a world shared with other pilots.</p>
+    </section>
+
+    <section class="showcase dark-section">
+      <div class="showcase-sticky">
+        <div class="showcase-image" data-parallax>
+          <img src="https://cdn.jetphotos.com/full/6/89142_1634842207.jpg" alt="Boeing 747">
+          <div class="image-caption"><span>ATLAS AIRCRAFT</span><strong>BUILT TO BE SEEN.</strong></div>
+        </div>
+      </div>
+      <div class="showcase-copy">
+        <div class="eyebrow">BUILT FOR FLIGHT</div>
+        <h2>Aircraft that feel like <em>aircraft.</em></h2>
+        <div class="feature-line reveal-section"><b>01</b><div><h3>Detailed cockpits</h3><p>Aircraft-specific layouts, controls and operational flows are part of the design direction from the beginning.</p></div></div>
+        <div class="feature-line reveal-section"><b>02</b><div><h3>Systems-driven flying</h3><p>Flight planning, navigation, autopilot concepts, aircraft configuration and performance all connect into one experience.</p></div></div>
+        <div class="feature-line reveal-section"><b>03</b><div><h3>A living flight world</h3><p>Routes, airports, multiplayer operations and aircraft are designed to work together rather than feel like separate menus.</p></div></div>
+      </div>
+    </section>
+
+    <section class="fleet-section" id="fleet">
+      <div class="section-head reveal-section">
+        <div><div class="eyebrow">OUR FLEET</div><h2>Choose your<br><em>aircraft.</em></h2></div>
+        <div class="fleet-controls"><button class="fleet-filter active" data-filter="all">All</button><button class="fleet-filter" data-filter="Boeing">Boeing</button><button class="fleet-filter" data-filter="Airbus">Airbus</button><button class="fleet-filter" data-filter="Embraer">Embraer</button><button class="fleet-filter" data-filter="ATR">ATR</button><button class="fleet-filter" data-filter="CRJ">CRJ</button></div>
+      </div>
+      <div class="fleet-track" id="fleetGrid"></div>
+      <div class="fleet-progress"><span></span></div>
+    </section>
+
+    <section class="systems-section" id="systems">
+      <div class="systems-intro reveal-section">
+        <div class="eyebrow">SYSTEMS</div>
+        <h2>More than<br><em>pretty aircraft.</em></h2>
+        <p>Every part of the flight is connected. Atlas is being shaped around the workflows pilots actually use.</p>
+      </div>
+      <div class="system-grid">
+        <article class="system-card system-main reveal-section">
+          <div class="system-art flight-plan-art"><span class="route-dot d1"></span><span class="route-dot d2"></span><span class="route-dot d3"></span><svg viewBox="0 0 700 300"><path d="M30 240 C 160 50, 250 270, 370 115 S 540 80 670 40"/></svg></div>
+          <div class="system-copy"><small>01 / FLIGHT PLANNING</small><h3>Plan it before you fly it.</h3><p>Departure, route, altitude and arrival flow designed as one operational experience.</p></div>
+        </article>
+        <article class="system-card reveal-section"><div class="radar-art"><i></i><i></i><i></i></div><small>02 / NAVIGATION</small><h3>Know where you are.</h3><p>Navigation concepts built around routes, procedures and situational awareness.</p></article>
+        <article class="system-card reveal-section"><div class="dial-art"><span>HDG</span><b>270°</b><em>ALT 12,040</em></div><small>03 / AUTOPILOT</small><h3>Let the aircraft work.</h3><p>Aircraft-specific automation and cockpit interaction are central to the design.</p></article>
+        <article class="system-card reveal-section"><div class="weather-art"><span></span><span></span><span></span></div><small>04 / WEATHER</small><h3>Fly through atmosphere.</h3><p>Time of day, clouds, wind and atmospheric presentation designed to change the feel of every flight.</p></article>
+        <article class="system-card reveal-section"><div class="atc-art"><b>ATC</b><span>124.800</span><span>READY</span></div><small>05 / MULTIPLAYER + ATC</small><h3>A shared sky.</h3><p>Future multiplayer operations are designed around communication, routes and other pilots.</p></article>
+        <article class="system-card reveal-section"><div class="log-art"><span>FLIGHT</span><b>001</b><span>DUB → FNC</span></div><small>06 / LOGBOOK</small><h3>Remember every flight.</h3><p>Aircraft history, routes and flight records tied to your Atlas profile.</p></article>
+      </div>
+    </section>
+
+    <section class="world-section" id="world">
+      <div class="world-bg"><div class="world-grid"></div><div class="world-earth"></div><div class="route-route"><i></i><i></i></div></div>
+      <div class="world-copy reveal-section">
+        <div class="eyebrow">GLOBAL FLIGHT</div>
+        <h2>From Ireland<br>to <em>anywhere.</em></h2>
+        <p>Atlas starts focused and optimized, with destinations expanding as development progresses.</p>
+        <div class="route-card"><div><strong>DUB</strong><small>Dublin</small></div><span class="route-line"><i></i></span><div><strong>FNC</strong><small>Madeira</small></div><b>01:42</b></div>
+      </div>
+    </section>
+
+    <section class="operations">
+      <div class="eyebrow reveal-section">THE FLIGHT FLOW</div>
+      <h2 class="reveal-section">Configure. Plan. <em>Operate.</em></h2>
+      <div class="ops-steps">
+        <div class="op reveal-section"><span>01</span><b>CONFIGURE</b><p>Pick an aircraft, setup and livery.</p></div>
+        <div class="op reveal-section"><span>02</span><b>PLAN</b><p>Build your route and departure.</p></div>
+        <div class="op reveal-section"><span>03</span><b>OPERATE</b><p>Fly the aircraft and manage the systems.</p></div>
+        <div class="op reveal-section"><span>04</span><b>REMEMBER</b><p>Keep the flight in your logbook.</p></div>
+      </div>
+    </section>
+
+    <section class="community-section" id="community">
+      <div class="community-image"><img src="https://cdn.plnspttrs.net/21691/cs-tce-hi-fly-airbus-a330-203_PlanespottersNet_1849492_36b8f0c3d9_o.jpg" alt="Airbus A330"></div>
+      <div class="community-copy reveal-section">
+        <div class="eyebrow">COMMUNITY</div>
+        <h2>Fly with us<br><em>from day one.</em></h2>
+        <p>Follow development, aircraft previews, destinations, updates and release news.</p>
+        <div class="social-grid">
+          <button data-social="youtube">YouTube <span>↗</span></button>
+          <button data-social="tiktok">TikTok <span>↗</span></button>
+          <button data-social="instagram">Instagram <span>↗</span></button>
+          <button data-social="x">X <span>↗</span></button>
+          <button data-social="discord">Discord <span>↗</span></button>
+          <button data-social="coffee">Buy me a coffee <span>↗</span></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© <b id="year"></b> Atlas Flight Simulator</span><span>ROBLOX · IN DEVELOPMENT</span><a href="#top">BACK TO TOP ↑</a></footer>
+
+  <div class="modal" id="modal"><div class="modal-box"><button id="modalClose">×</button><div class="eyebrow">ATLAS FS</div><h3>Coming soon.</h3><p>This link will be connected when the official Atlas channel or service is ready.</p></div></div>
+  <script src="config.js?v=atlas6"></script>
+  <script src="app.js?v=atlas6"></script>
+</body>
+</html>
