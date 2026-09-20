@@ -1,1 +1,1 @@
-window.ATLAS_CONFIG={DISCORD_URL:"",COFFEE_URL:""};
+window.ATLAS_CONFIG={DISCORD_URL:"",COFFEE_URL:"",SOCIALS:{youtube:"",tiktok:"",instagram:"",x:""}};

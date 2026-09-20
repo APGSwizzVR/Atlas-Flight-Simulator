@@ -1,180 +1,22 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#05070b">
-<meta name="description" content="Atlas Flight Simulator — a new Roblox flight simulator.">
-<title>Atlas Flight Simulator — Atlas FS</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="noise"></div>
-<div class="cursor-glow"></div>
-
-<header class="nav">
-  <a class="brand" href="#top" aria-label="Atlas Flight Simulator">
-    <span class="brand-mark">A</span>
-    <span><strong>Atlas</strong><small>Flight Simulator</small></span>
-  </a>
-  <nav class="nav-links">
-    <a href="#experience">Experience</a>
-    <a href="#aircraft">Aircraft</a>
-    <a href="#world">World</a>
-    <a href="#development">Development</a>
-  </nav>
-  <button class="glass-button nav-button" data-action="discord">Discord <span>↗</span></button>
-</header>
-
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#05070b"><meta name="description" content="Atlas Flight Simulator — a new Roblox flight simulator."><title>Atlas Flight Simulator — Atlas FS</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<body><div class="noise"></div><div class="cursor-glow"></div>
+<header class="nav"><a class="brand" href="#top"><span class="brand-mark">A</span><span><strong>Atlas</strong><small>Flight Simulator</small></span></a><nav class="nav-links"><a href="#experience">Experience</a><a href="#fleet">Our Fleet</a><a href="#world">World</a><a href="#community">Community</a></nav><button class="glass-button nav-button" data-action="discord">Discord <span>↗</span></button></header>
 <main id="top">
-<section class="hero">
-  <canvas id="earth" aria-hidden="true"></canvas>
-  <div class="hero-grid"></div>
-  <div class="hero-copy reveal">
-    <div class="eyebrow"><i></i> ATLAS FS <span>•</span> IN DEVELOPMENT</div>
-    <h1>Flight.<br><em>Reimagined.</em></h1>
-    <p>A new Roblox flight simulator focused on atmosphere, aviation and the feeling of actually going somewhere.</p>
-    <div class="hero-actions">
-      <button class="primary-button" data-action="discord">Join the community <span>↗</span></button>
-      <a class="text-button" href="#experience">Explore Atlas <span>↓</span></a>
-    </div>
-  </div>
+<section class="hero"><canvas id="earth"></canvas><div class="hero-grid"></div><div class="hero-copy reveal"><div class="eyebrow"><i></i> ATLAS FS <span>•</span> IN DEVELOPMENT</div><h1>Fly.<br><em>Beyond.</em></h1><p>A modern Roblox flight simulator built around the aircraft, airports and atmosphere that make aviation worth experiencing.</p><div class="hero-actions"><button class="primary-button" data-action="discord">Join the community <span>↗</span></button><a class="text-button" href="#fleet">Explore the fleet <span>↓</span></a></div></div><div class="flight-status glass-panel reveal"><div class="status-top"><span>ATLAS FLIGHT DECK</span><span class="live-dot"></span></div><div class="status-route"><div><small>DEP</small><strong>DUB</strong><span>Dublin</span></div><div class="route-line"><i></i><b>ATLAS</b><i></i></div><div><small>ARR</small><strong>FNC</strong><span>Madeira</span></div></div><div class="status-bottom"><span>COMING SOON</span><span>ROBLOX</span><span>—</span></div></div><div class="scroll-prompt"><span></span> SCROLL TO EXPLORE</div></section>
 
-  <div class="flight-status glass-panel reveal">
-    <div class="status-top"><span>ATLAS FLIGHT DECK</span><span class="live-dot"></span></div>
-    <div class="status-route">
-      <div><small>DEP</small><strong>DUB</strong><span>Dublin</span></div>
-      <div class="route-line"><i></i><b>ATLAS</b><i></i></div>
-      <div><small>ARR</small><strong>FNC</strong><span>Madeira</span></div>
-    </div>
-    <div class="status-bottom"><span>COMING SOON</span><span>ROBLOX</span><span>—</span></div>
-  </div>
+<section class="intro-section" id="experience"><div class="intro-copy reveal"><div class="eyebrow">THE ATLAS EXPERIENCE</div><h2>Everything you need<br>to <em>love flying.</em></h2><p>Atlas takes the presentation of a modern flight simulator and brings it into Roblox — with aviation-first visuals, a growing aircraft fleet and a world designed around routes.</p></div><div class="intro-stats reveal"><div><strong>01</strong><span>Aircraft</span></div><div><strong>02</strong><span>Airports</span></div><div><strong>03</strong><span>Community</span></div></div></section>
 
-  <div class="scroll-prompt"><span></span> SCROLL TO BEGIN</div>
-</section>
+<section class="feature-strip"><article class="feature-wide reveal"><div class="feature-image sky-art"><div class="sun"></div><div class="horizon"></div><div class="plane-glow">✦</div></div><div><span>ATMOSPHERE</span><h3>The sky should<br>feel alive.</h3><p>From the runway to cruise altitude, Atlas is being designed around the atmosphere of flight.</p></div></article><article class="feature-small reveal"><div class="radar-art"><div class="radar-ring"></div><div class="radar-sweep"></div><div class="radar-dot d1"></div><div class="radar-dot d2"></div></div><span>FLIGHT</span><h3>Pick a route.<br>Make it yours.</h3></article><article class="feature-small reveal"><div class="cockpit-art"><div class="hud"><b>ALT 35,000</b><b>SPD 451</b><b>HDG 274</b></div><div class="attitude"><i></i></div></div><span>COCKPIT</span><h3>Made for<br>the pilot.</h3></article></section>
 
-<section class="story" id="experience">
-  <div class="section-intro reveal">
-    <div class="section-index">01</div>
-    <div>
-      <div class="eyebrow">THE ATLAS EXPERIENCE</div>
-      <h2>Built for the<br><em>love of flight.</em></h2>
-    </div>
-    <p>Atlas is being shaped around the parts of flight that make you look out the window: weather, distance, aircraft, airports and the anticipation before takeoff.</p>
-  </div>
+<section class="fleet-section" id="fleet"><div class="fleet-header reveal"><div><div class="eyebrow">OUR FLEET</div><h2>Aircraft for<br><em>every journey.</em></h2></div><p>Atlas is planned around a broad commercial fleet, from regional aircraft to long-haul widebodies. Every aircraft shown here is part of the current fleet plan, not a claim that it is already in-game.</p></div><div class="fleet-filters"><button class="fleet-filter active" data-filter="all">All <span>36</span></button><button class="fleet-filter" data-filter="boeing">Boeing <span>14</span></button><button class="fleet-filter" data-filter="airbus">Airbus <span>13</span></button><button class="fleet-filter" data-filter="embraer">Embraer <span>4</span></button><button class="fleet-filter" data-filter="atr">ATR <span>2</span></button><button class="fleet-filter" data-filter="crj">CRJ <span>3</span></button></div><div class="fleet-grid"><article class="fleet-card reveal" data-family="boeing"><div class="fleet-image"><img src="https://cdn.plnspttrs.net/05609/ly-mgm-marabu-airlines-boeing-737-8eh-wl_PlanespottersNet_1775954_eb2d2a2a00_o.jpg" alt="Boeing 737-700" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>01 / BOEING</span><h3>737-700</h3><p>Boeing commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="boeing"><div class="fleet-image"><img src="https://cdn.plnspttrs.net/05609/ly-mgm-marabu-airlines-boeing-737-8eh-wl_PlanespottersNet_1775954_eb2d2a2a00_o.jpg" alt="Boeing 737-800" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>02 / BOEING</span><h3>737-800</h3><p>Boeing commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="boeing"><div class="fleet-image"><img src="https://cdn.plnspttrs.net/05609/ly-mgm-marabu-airlines-boeing-737-8eh-wl_PlanespottersNet_1775954_eb2d2a2a00_o.jpg" alt="Boeing 737-900ER" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>03 / BOEING</span><h3>737-900ER</h3><p>Boeing commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="boeing"><div class="fleet-image"><img src="https://cdn.jetphotos.com/full/6/89142_1634842207.jpg" alt="Boeing 747-400" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>04 / BOEING</span><h3>747-400</h3><p>Boeing commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="boeing"><div class="fleet-image"><img src="https://cdn.jetphotos.com/full/6/89142_1634842207.jpg" alt="Boeing 747-8" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>05 / BOEING</span><h3>747-8</h3><p>Boeing commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="boeing"><div class="fleet-image"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Boeing_757-23N%2C_GainJet_Aviation_JP7522994.jpg" alt="Boeing 757-200" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>06 / BOEING</span><h3>757-200</h3><p>Boeing commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="boeing"><div class="fleet-image"><img src="https://d3trj3zqmkebtg.cloudfront.net/pics/352/352774_big.jpg" alt="Boeing 767-300ER" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>07 / BOEING</span><h3>767-300ER</h3><p>Boeing commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="boeing"><div class="fleet-image"><img src="https://d3trj3zqmkebtg.cloudfront.net/pics/352/352774_big.jpg" alt="Boeing 767-400ER" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>08 / BOEING</span><h3>767-400ER</h3><p>Boeing commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="boeing"><div class="fleet-image"><img src="https://i.pinimg.com/originals/93/26/7e/93267ea20069ad94325e6bf47314d8d8.jpg" alt="Boeing 777-200ER" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>09 / BOEING</span><h3>777-200ER</h3><p>Boeing commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="boeing"><div class="fleet-image"><img src="https://i.pinimg.com/originals/93/26/7e/93267ea20069ad94325e6bf47314d8d8.jpg" alt="Boeing 777-200LR" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>10 / BOEING</span><h3>777-200LR</h3><p>Boeing commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="boeing"><div class="fleet-image"><img src="https://i.pinimg.com/originals/93/26/7e/93267ea20069ad94325e6bf47314d8d8.jpg" alt="Boeing 777-300ER" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>11 / BOEING</span><h3>777-300ER</h3><p>Boeing commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="boeing"><div class="fleet-image"><img src="https://i.pinimg.com/originals/93/26/7e/93267ea20069ad94325e6bf47314d8d8.jpg" alt="Boeing 787-8" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>12 / BOEING</span><h3>787-8</h3><p>Boeing commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="boeing"><div class="fleet-image"><img src="https://i.pinimg.com/originals/93/26/7e/93267ea20069ad94325e6bf47314d8d8.jpg" alt="Boeing 787-9" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>13 / BOEING</span><h3>787-9</h3><p>Boeing commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="boeing"><div class="fleet-image"><img src="https://i.pinimg.com/originals/93/26/7e/93267ea20069ad94325e6bf47314d8d8.jpg" alt="Boeing 787-10" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>14 / BOEING</span><h3>787-10</h3><p>Boeing commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="airbus"><div class="fleet-image"><img src="https://cdn.plnspttrs.net/46333/lz-mdi-fly2sky-airbus-a320-233_PlanespottersNet_1462258_3c7cbfe72a_o.jpg" alt="Airbus A319" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>15 / AIRBUS</span><h3>A319</h3><p>Airbus commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="airbus"><div class="fleet-image"><img src="https://cdn.plnspttrs.net/46333/lz-mdi-fly2sky-airbus-a320-233_PlanespottersNet_1462258_3c7cbfe72a_o.jpg" alt="Airbus A320-200" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>16 / AIRBUS</span><h3>A320-200</h3><p>Airbus commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="airbus"><div class="fleet-image"><img src="https://cdn.plnspttrs.net/46333/lz-mdi-fly2sky-airbus-a320-233_PlanespottersNet_1462258_3c7cbfe72a_o.jpg" alt="Airbus A320neo" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>17 / AIRBUS</span><h3>A320neo</h3><p>Airbus commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="airbus"><div class="fleet-image"><img src="https://cdn.plnspttrs.net/46333/lz-mdi-fly2sky-airbus-a320-233_PlanespottersNet_1462258_3c7cbfe72a_o.jpg" alt="Airbus A321-200" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>18 / AIRBUS</span><h3>A321-200</h3><p>Airbus commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="airbus"><div class="fleet-image"><img src="https://cdn.plnspttrs.net/46333/lz-mdi-fly2sky-airbus-a320-233_PlanespottersNet_1462258_3c7cbfe72a_o.jpg" alt="Airbus A321neo" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>19 / AIRBUS</span><h3>A321neo</h3><p>Airbus commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="airbus"><div class="fleet-image"><img src="https://cdn.plnspttrs.net/21691/cs-tce-hi-fly-airbus-a330-203_PlanespottersNet_1849492_36b8f0c3d9_o.jpg" alt="Airbus A330-200" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>20 / AIRBUS</span><h3>A330-200</h3><p>Airbus commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="airbus"><div class="fleet-image"><img src="https://cdn.plnspttrs.net/21691/cs-tce-hi-fly-airbus-a330-203_PlanespottersNet_1849492_36b8f0c3d9_o.jpg" alt="Airbus A330-300" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>21 / AIRBUS</span><h3>A330-300</h3><p>Airbus commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="airbus"><div class="fleet-image"><img src="https://cdn.plnspttrs.net/21691/cs-tce-hi-fly-airbus-a330-203_PlanespottersNet_1849492_36b8f0c3d9_o.jpg" alt="Airbus A330-900" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>22 / AIRBUS</span><h3>A330-900</h3><p>Airbus commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="airbus"><div class="fleet-image"><img src="https://www.gettyimages.com/" alt="Airbus A340-300" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>23 / AIRBUS</span><h3>A340-300</h3><p>Airbus commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="airbus"><div class="fleet-image"><img src="https://www.gettyimages.com/" alt="Airbus A340-600" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>24 / AIRBUS</span><h3>A340-600</h3><p>Airbus commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="airbus"><div class="fleet-image"><img src="https://cdn.plnspttrs.net/21691/cs-tce-hi-fly-airbus-a330-203_PlanespottersNet_1849492_36b8f0c3d9_o.jpg" alt="Airbus A350-900" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>25 / AIRBUS</span><h3>A350-900</h3><p>Airbus commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="airbus"><div class="fleet-image"><img src="https://cdn.plnspttrs.net/21691/cs-tce-hi-fly-airbus-a330-203_PlanespottersNet_1849492_36b8f0c3d9_o.jpg" alt="Airbus A350-1000" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>26 / AIRBUS</span><h3>A350-1000</h3><p>Airbus commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="airbus"><div class="fleet-image"><img src="https://www.aerotime.aero/images/Hi-Fly-Malta-9H-MIP-at-Luqa-Malta-International-Airport-MLA-800x500.jpg" alt="Airbus A380-800" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>27 / AIRBUS</span><h3>A380-800</h3><p>Airbus commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="embraer"><div class="fleet-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/PH-EXW%20AIRCRAFT%20Embraer%20E175STD.jpg" alt="Embraer E170" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>28 / EMBRAER</span><h3>E170</h3><p>Embraer commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="embraer"><div class="fleet-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/PH-EXW%20AIRCRAFT%20Embraer%20E175STD.jpg" alt="Embraer E175" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>29 / EMBRAER</span><h3>E175</h3><p>Embraer commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="embraer"><div class="fleet-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/PH-EXW%20AIRCRAFT%20Embraer%20E175STD.jpg" alt="Embraer E190" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>30 / EMBRAER</span><h3>E190</h3><p>Embraer commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="embraer"><div class="fleet-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/PH-EXW%20AIRCRAFT%20Embraer%20E175STD.jpg" alt="Embraer E195" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>31 / EMBRAER</span><h3>E195</h3><p>Embraer commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="atr"><div class="fleet-image"><img src="https://www.airhistory.net/photo/606070/EI-FSK" alt="ATR 72-600" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>32 / ATR</span><h3>72-600</h3><p>ATR commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="atr"><div class="fleet-image"><img src="https://readyfortakeoffbook.com/blogs/aircraft-type/atr-42-600" alt="ATR 42-600" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>33 / ATR</span><h3>42-600</h3><p>ATR commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="crj"><div class="fleet-image"><img src="https://readyfortakeoffbook.com/blogs/aircraft-type/bombardier-crj700" alt="CRJ CRJ-700" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>34 / CRJ</span><h3>CRJ-700</h3><p>CRJ commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="crj"><div class="fleet-image"><img src="https://cdn.plnspttrs.net/1336203/ei-geh-cityjet-bombardier-crj-900lr-cl-600-2d24_PlanespottersNet_1336203.jpg" alt="CRJ CRJ-900" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>35 / CRJ</span><h3>CRJ-900</h3><p>CRJ commercial aircraft</p></div><div class="fleet-arrow">↗</div></article><article class="fleet-card reveal" data-family="crj"><div class="fleet-image"><img src="https://cdn.plnspttrs.net/21691/cs-tce-hi-fly-airbus-a330-203_PlanespottersNet_1849492_36b8f0c3d9_o.jpg" alt="CRJ CRJ-1000" loading="lazy"><div class="image-shade"></div><span class="fleet-status">PLANNED</span></div><div class="fleet-info"><span>36 / CRJ</span><h3>CRJ-1000</h3><p>CRJ commercial aircraft</p></div><div class="fleet-arrow">↗</div></article></div></section>
 
-  <div class="experience-grid">
-    <article class="feature-card feature-large reveal">
-      <div class="card-art sky-art"><div class="sun"></div><div class="horizon"></div><div class="plane-silhouette">✦</div></div>
-      <div class="card-copy"><span>01 / ATMOSPHERE</span><h3>Make the sky<br>feel alive.</h3><p>Light, clouds, horizons and the quiet space above the runway.</p></div>
-    </article>
-    <article class="feature-card reveal">
-      <div class="card-art radar-art"><div class="radar-ring"></div><div class="radar-sweep"></div><div class="radar-dot d1"></div><div class="radar-dot d2"></div></div>
-      <div class="card-copy"><span>02 / FLIGHT</span><h3>Every route<br>has a story.</h3><p>Short hops, long sectors and approaches worth repeating.</p></div>
-    </article>
-    <article class="feature-card reveal">
-      <div class="card-art cockpit-art"><div class="hud"><b>ALT 35,000</b><b>SPD 451</b><b>HDG 274</b></div><div class="attitude"><i></i></div></div>
-      <div class="card-copy"><span>03 / COCKPIT</span><h3>Designed around<br>the pilot.</h3><p>A focused interface inspired by modern flight decks.</p></div>
-    </article>
-  </div>
-</section>
+<section class="world-section" id="world"><div class="world-copy reveal"><div class="section-index">02</div><div class="eyebrow">THE WORLD</div><h2>From one<br>runway to <em>anywhere.</em></h2><p>Atlas is being planned around memorable airports and routes, with a focus on the places that make a flight feel like a journey.</p><div class="route-card glass-panel"><div><small>ROUTE PREVIEW</small><strong>DUBLIN</strong><span>→</span><strong>MADEIRA</strong></div><div class="route-meta"><span>ATLAS FS</span><span>APPROACH 05</span><span>COMING SOON</span></div></div></div><div class="world-visual reveal"><div class="world-orbit orbit-a"></div><div class="world-orbit orbit-b"></div><div class="world-globe"><canvas id="worldCanvas"></canvas><div class="world-pin pin-a"></div><div class="world-pin pin-b"></div></div><div class="coordinate">53°20'N<br>6°16'W</div></div></section>
 
-<section class="aircraft-section" id="aircraft">
-  <div class="aircraft-heading reveal">
-    <div><div class="eyebrow">AIRCRAFT</div><h2>Choose your<br><em>machine.</em></h2></div>
-    <div class="slider-hint">DRAG / SCROLL <span>→</span></div>
-  </div>
-  <div class="aircraft-track" id="aircraftTrack">
-    <article class="aircraft-card active" data-aircraft="01">
-      <div class="aircraft-number">01</div>
-      <div class="aircraft-plane plane-wide">✈</div>
-      <div class="aircraft-info"><span>ATLAS AIRCRAFT / 01</span><h3>Next generation<br>narrowbody.</h3><p>Coming to Atlas in a future build.</p></div>
-      <div class="aircraft-specs"><span><b>TYPE</b>NARROWBODY</span><span><b>ROLE</b>PASSENGER</span><span><b>STATUS</b>PLANNED</span></div>
-    </article>
-    <article class="aircraft-card">
-      <div class="aircraft-number">02</div>
-      <div class="aircraft-plane">✈</div>
-      <div class="aircraft-info"><span>ATLAS AIRCRAFT / 02</span><h3>Widebody<br>journeys.</h3><p>Long-haul routes are part of the vision.</p></div>
-      <div class="aircraft-specs"><span><b>TYPE</b>WIDEBODY</span><span><b>ROLE</b>LONG HAUL</span><span><b>STATUS</b>PLANNED</span></div>
-    </article>
-    <article class="aircraft-card">
-      <div class="aircraft-number">03</div>
-      <div class="aircraft-plane">✈</div>
-      <div class="aircraft-info"><span>ATLAS AIRCRAFT / 03</span><h3>Special<br>operations.</h3><p>More aircraft categories can follow.</p></div>
-      <div class="aircraft-specs"><span><b>TYPE</b>VARIED</span><span><b>ROLE</b>EXPLORATION</span><span><b>STATUS</b>FUTURE</span></div>
-    </article>
-  </div>
-</section>
+<section class="development" id="development"><div class="dev-header reveal"><div class="section-index">03</div><div><div class="eyebrow">DEVELOPMENT</div><h2>Early days.<br><em>Big ambitions.</em></h2></div><p>There is no playable build yet. Atlas FS has only just entered development, so this website represents the direction of the project rather than finished features.</p></div><div class="dev-rail reveal"><div class="dev-line"></div><article class="dev-step active"><span>01</span><small>NOW</small><h3>Foundation</h3><p>Visual identity, world direction and core flight-sim planning.</p></article><article class="dev-step"><span>02</span><small>NEXT</small><h3>Prototype</h3><p>First playable systems, aircraft work and an early environment.</p></article><article class="dev-step"><span>03</span><small>LATER</small><h3>Testing</h3><p>Community testing once there is something meaningful to fly.</p></article></div></section>
 
-<section class="world-section" id="world">
-  <div class="world-copy reveal">
-    <div class="section-index">02</div>
-    <div class="eyebrow">THE WORLD</div>
-    <h2>See the route.<br><em>Feel the distance.</em></h2>
-    <p>Atlas is intended to grow around memorable airports and routes rather than simply filling a map. The world should give you a reason to keep flying.</p>
-    <div class="route-card glass-panel">
-      <div><small>ROUTE PREVIEW</small><strong>DUBLIN</strong><span>→</span><strong>MADEIRA</strong></div>
-      <div class="route-meta"><span>EI / ATLAS</span><span>APPROACH 05</span><span>COMING SOON</span></div>
-    </div>
-  </div>
-  <div class="world-visual reveal">
-    <div class="world-orbit orbit-a"></div><div class="world-orbit orbit-b"></div>
-    <div class="world-globe"><canvas id="worldCanvas"></canvas><div class="world-pin pin-a"></div><div class="world-pin pin-b"></div></div>
-    <div class="coordinate">53°20'N<br>6°16'W</div>
-  </div>
-</section>
-
-<section class="development" id="development">
-  <div class="dev-header reveal">
-    <div class="section-index">03</div>
-    <div class="eyebrow">DEVELOPMENT</div>
-    <h2>Early days.<br><em>Big ambitions.</em></h2>
-    <p>There is no playable build yet. Atlas FS has only just entered development, so this site is a look at the direction rather than a list of finished features.</p>
-  </div>
-  <div class="dev-rail reveal">
-    <div class="dev-line"></div>
-    <article class="dev-step active"><span>01</span><small>NOW</small><h3>Foundation</h3><p>Visual identity, world direction and core flight-sim planning.</p></article>
-    <article class="dev-step"><span>02</span><small>NEXT</small><h3>Prototype</h3><p>First playable systems, aircraft work and an early environment.</p></article>
-    <article class="dev-step"><span>03</span><small>LATER</small><h3>Testing</h3><p>Community testing once there is something meaningful to fly.</p></article>
-  </div>
-</section>
-
-<section class="community reveal">
-  <div class="community-orbit"></div>
-  <div>
-    <div class="eyebrow">ATLAS COMMUNITY</div>
-    <h2>Be there<br><em>from day one.</em></h2>
-    <p>Follow development, share aviation ideas and help shape what Atlas becomes.</p>
-  </div>
-  <div class="community-actions">
-    <button class="primary-button" data-action="discord">Join Discord <span>↗</span></button>
-    <button class="glass-button" data-action="coffee">Support Atlas <span>↗</span></button>
-  </div>
-</section>
+<section class="community reveal" id="community"><div><div class="eyebrow">ATLAS COMMUNITY</div><h2>Follow the<br><em>flight.</em></h2><p>Development updates, aviation content and community news across the platforms you already use.</p></div><div class="social-grid"><button data-social="youtube"><b>YT</b><span>YouTube</span><i>↗</i></button><button data-social="tiktok"><b>TK</b><span>TikTok</span><i>↗</i></button><button data-social="instagram"><b>IG</b><span>Instagram</span><i>↗</i></button><button data-social="x"><b>𝕏</b><span>X</span><i>↗</i></button><button data-action="discord"><b>DS</b><span>Discord</span><i>↗</i></button><button data-action="coffee"><b>☕</b><span>Buy Me a Coffee</span><i>↗</i></button></div></section>
 </main>
-
-<footer>
-  <a class="brand" href="#top"><span class="brand-mark">A</span><span><strong>Atlas</strong><small>Flight Simulator</small></span></a>
-  <span>Atlas FS • Coming Soon</span>
-  <span>© <span id="year"></span></span>
-</footer>
-
-<div class="modal" id="modal" aria-hidden="true">
-  <div class="modal-backdrop" data-close></div>
-  <div class="modal-box glass-panel">
-    <button class="modal-close" data-close>×</button>
-    <div class="eyebrow" id="modal-label">ATLAS FS</div>
-    <h2 id="modal-title">Coming soon.</h2>
-    <p id="modal-text"></p>
-    <button class="primary-button" data-close>Back to Atlas</button>
-  </div>
-</div>
-
-<script src="config.js"></script>
-<script src="globe.js"></script>
-<script src="app.js"></script>
-</body>
-</html>
+<footer><a class="brand" href="#top"><span class="brand-mark">A</span><span><strong>Atlas</strong><small>Flight Simulator</small></span></a><span>Atlas FS • Coming Soon</span><span>© <span id="year"></span></span></footer>
+<div class="modal" id="modal" aria-hidden="true"><div class="modal-backdrop" data-close></div><div class="modal-box glass-panel"><button class="modal-close" data-close>×</button><div class="eyebrow" id="modal-label">ATLAS FS</div><h2 id="modal-title">Coming soon.</h2><p id="modal-text"></p><button class="primary-button" data-close>Back to Atlas</button></div></div>
+<script src="config.js"></script><script src="globe.js"></script><script src="app.js"></script></body></html>
