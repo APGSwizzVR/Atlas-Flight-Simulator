@@ -1,69 +1,180 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#050912"><meta name="description" content="Atlas Flight Simulator — a new Roblox flight simulator.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#05070b">
+<meta name="description" content="Atlas Flight Simulator — a new Roblox flight simulator.">
 <title>Atlas Flight Simulator — Atlas FS</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="grain"></div><div class="cursor-glow"></div>
+<div class="noise"></div>
+<div class="cursor-glow"></div>
+
 <header class="nav">
-<a class="brand" href="#top"><span class="brand-mark">A</span><span><b>Atlas</b><small>Flight Simulator</small></span></a>
-<nav><a href="#experience">Experience</a><a href="#world">World</a><a href="#development">Development</a></nav>
-<button class="nav-cta" data-action="discord">Join Discord</button>
+  <a class="brand" href="#top" aria-label="Atlas Flight Simulator">
+    <span class="brand-mark">A</span>
+    <span><strong>Atlas</strong><small>Flight Simulator</small></span>
+  </a>
+  <nav class="nav-links">
+    <a href="#experience">Experience</a>
+    <a href="#aircraft">Aircraft</a>
+    <a href="#world">World</a>
+    <a href="#development">Development</a>
+  </nav>
+  <button class="glass-button nav-button" data-action="discord">Discord <span>↗</span></button>
 </header>
 
 <main id="top">
 <section class="hero">
-<div class="hero-bg"></div><canvas id="earth" aria-hidden="true"></canvas><div class="stars"></div>
-<div class="hero-copy reveal">
-<div class="eyebrow"><i></i> Atlas FS · In development</div>
-<h1>Fly beyond<br><em>ordinary.</em></h1>
-<p>A new Roblox flight simulator built around the feeling of flight — beautiful skies, memorable routes and a world worth exploring.</p>
-<div class="actions"><button class="primary" data-action="discord">Join the community <span>↗</span></button><a class="secondary" href="#experience">Discover Atlas <span>↓</span></a></div>
-</div>
-<div class="hero-flight glass reveal"><span>ATLAS FS</span><b>COMING SOON</b><small>Roblox Flight Simulator</small></div>
-<div class="scroll">SCROLL TO EXPLORE <span></span></div>
+  <canvas id="earth" aria-hidden="true"></canvas>
+  <div class="hero-grid"></div>
+  <div class="hero-copy reveal">
+    <div class="eyebrow"><i></i> ATLAS FS <span>•</span> IN DEVELOPMENT</div>
+    <h1>Flight.<br><em>Reimagined.</em></h1>
+    <p>A new Roblox flight simulator focused on atmosphere, aviation and the feeling of actually going somewhere.</p>
+    <div class="hero-actions">
+      <button class="primary-button" data-action="discord">Join the community <span>↗</span></button>
+      <a class="text-button" href="#experience">Explore Atlas <span>↓</span></a>
+    </div>
+  </div>
+
+  <div class="flight-status glass-panel reveal">
+    <div class="status-top"><span>ATLAS FLIGHT DECK</span><span class="live-dot"></span></div>
+    <div class="status-route">
+      <div><small>DEP</small><strong>DUB</strong><span>Dublin</span></div>
+      <div class="route-line"><i></i><b>ATLAS</b><i></i></div>
+      <div><small>ARR</small><strong>FNC</strong><span>Madeira</span></div>
+    </div>
+    <div class="status-bottom"><span>COMING SOON</span><span>ROBLOX</span><span>—</span></div>
+  </div>
+
+  <div class="scroll-prompt"><span></span> SCROLL TO BEGIN</div>
 </section>
 
-<section class="section intro" id="experience">
-<div class="heading reveal"><div><label>01 · THE EXPERIENCE</label><h2>Designed around<br>the <em>flight.</em></h2></div><p>Atlas FS is being built as a modern aviation experience — clean, immersive and focused on what makes flying enjoyable.</p></div>
-<div class="cards">
-<article class="glass card big reveal"><div class="card-number">01</div><div class="orb"></div><label>ATMOSPHERE</label><h3>Feel the sky.</h3><p>Clouds, light, distant horizons and dramatic approaches designed to make every flight feel like a journey.</p><span class="card-link">Explore the world <b>→</b></span></article>
-<article class="glass card reveal"><div class="icon">⌁</div><label>FLIGHT</label><h3>Made for pilots.</h3><p>Flight-focused systems with room to grow into a deeper simulator over time.</p></article>
-<article class="glass card reveal"><div class="icon">◌</div><label>COMMUNITY</label><h3>Built together.</h3><p>Development will evolve alongside the people who fly, test and talk about Atlas.</p></article>
-</div>
+<section class="story" id="experience">
+  <div class="section-intro reveal">
+    <div class="section-index">01</div>
+    <div>
+      <div class="eyebrow">THE ATLAS EXPERIENCE</div>
+      <h2>Built for the<br><em>love of flight.</em></h2>
+    </div>
+    <p>Atlas is being shaped around the parts of flight that make you look out the window: weather, distance, aircraft, airports and the anticipation before takeoff.</p>
+  </div>
+
+  <div class="experience-grid">
+    <article class="feature-card feature-large reveal">
+      <div class="card-art sky-art"><div class="sun"></div><div class="horizon"></div><div class="plane-silhouette">✦</div></div>
+      <div class="card-copy"><span>01 / ATMOSPHERE</span><h3>Make the sky<br>feel alive.</h3><p>Light, clouds, horizons and the quiet space above the runway.</p></div>
+    </article>
+    <article class="feature-card reveal">
+      <div class="card-art radar-art"><div class="radar-ring"></div><div class="radar-sweep"></div><div class="radar-dot d1"></div><div class="radar-dot d2"></div></div>
+      <div class="card-copy"><span>02 / FLIGHT</span><h3>Every route<br>has a story.</h3><p>Short hops, long sectors and approaches worth repeating.</p></div>
+    </article>
+    <article class="feature-card reveal">
+      <div class="card-art cockpit-art"><div class="hud"><b>ALT 35,000</b><b>SPD 451</b><b>HDG 274</b></div><div class="attitude"><i></i></div></div>
+      <div class="card-copy"><span>03 / COCKPIT</span><h3>Designed around<br>the pilot.</h3><p>A focused interface inspired by modern flight decks.</p></div>
+    </article>
+  </div>
 </section>
 
-<section class="earth-section" id="world">
-<div class="earth-copy reveal"><label>02 · THE WORLD</label><h2>A world<br>worth flying.</h2><p>Atlas FS will grow around routes, airports and destinations that make you want to look out of the window.</p><div class="stat-row"><div><b>∞</b><span>Routes to explore</span></div><div><b>01</b><span>Project · Atlas FS</span></div></div></div>
-<div class="earth-orbit"><div class="orbit-line"></div><div class="mini-earth"></div><span class="pin p1"></span><span class="pin p2"></span><span class="pin p3"></span></div>
+<section class="aircraft-section" id="aircraft">
+  <div class="aircraft-heading reveal">
+    <div><div class="eyebrow">AIRCRAFT</div><h2>Choose your<br><em>machine.</em></h2></div>
+    <div class="slider-hint">DRAG / SCROLL <span>→</span></div>
+  </div>
+  <div class="aircraft-track" id="aircraftTrack">
+    <article class="aircraft-card active" data-aircraft="01">
+      <div class="aircraft-number">01</div>
+      <div class="aircraft-plane plane-wide">✈</div>
+      <div class="aircraft-info"><span>ATLAS AIRCRAFT / 01</span><h3>Next generation<br>narrowbody.</h3><p>Coming to Atlas in a future build.</p></div>
+      <div class="aircraft-specs"><span><b>TYPE</b>NARROWBODY</span><span><b>ROLE</b>PASSENGER</span><span><b>STATUS</b>PLANNED</span></div>
+    </article>
+    <article class="aircraft-card">
+      <div class="aircraft-number">02</div>
+      <div class="aircraft-plane">✈</div>
+      <div class="aircraft-info"><span>ATLAS AIRCRAFT / 02</span><h3>Widebody<br>journeys.</h3><p>Long-haul routes are part of the vision.</p></div>
+      <div class="aircraft-specs"><span><b>TYPE</b>WIDEBODY</span><span><b>ROLE</b>LONG HAUL</span><span><b>STATUS</b>PLANNED</span></div>
+    </article>
+    <article class="aircraft-card">
+      <div class="aircraft-number">03</div>
+      <div class="aircraft-plane">✈</div>
+      <div class="aircraft-info"><span>ATLAS AIRCRAFT / 03</span><h3>Special<br>operations.</h3><p>More aircraft categories can follow.</p></div>
+      <div class="aircraft-specs"><span><b>TYPE</b>VARIED</span><span><b>ROLE</b>EXPLORATION</span><span><b>STATUS</b>FUTURE</span></div>
+    </article>
+  </div>
 </section>
 
-<section class="section cockpit">
-<div class="cockpit glass reveal">
-<div class="screen"><div class="screen-top">ATLAS · FLIGHT DECK <span>— — —</span></div><div class="attitude"><div class="cross">+</div><div class="pitch p5">5</div><div class="pitch m5">5</div></div><div class="gauges"><span>SPD <b>—</b></span><span>ALT <b>—</b></span><span>HDG <b>—</b></span></div></div>
-<div class="cockpit-copy"><label>03 · FLIGHT DECK</label><h2>The cockpit<br>is the <em>experience.</em></h2><p>Atlas starts with the fundamentals: a convincing flight environment, a strong visual identity and a platform that can expand with the community.</p><span class="pill"><i></i> Development has just begun</span></div>
-</div>
+<section class="world-section" id="world">
+  <div class="world-copy reveal">
+    <div class="section-index">02</div>
+    <div class="eyebrow">THE WORLD</div>
+    <h2>See the route.<br><em>Feel the distance.</em></h2>
+    <p>Atlas is intended to grow around memorable airports and routes rather than simply filling a map. The world should give you a reason to keep flying.</p>
+    <div class="route-card glass-panel">
+      <div><small>ROUTE PREVIEW</small><strong>DUBLIN</strong><span>→</span><strong>MADEIRA</strong></div>
+      <div class="route-meta"><span>EI / ATLAS</span><span>APPROACH 05</span><span>COMING SOON</span></div>
+    </div>
+  </div>
+  <div class="world-visual reveal">
+    <div class="world-orbit orbit-a"></div><div class="world-orbit orbit-b"></div>
+    <div class="world-globe"><canvas id="worldCanvas"></canvas><div class="world-pin pin-a"></div><div class="world-pin pin-b"></div></div>
+    <div class="coordinate">53°20'N<br>6°16'W</div>
+  </div>
 </section>
 
-<section class="section development" id="development">
-<div class="center reveal"><label>04 · DEVELOPMENT</label><h2>Early days.<br><em>Big ambitions.</em></h2><p>There is no playable build yet. The project is at the beginning of development, so this site is intentionally focused on the vision rather than pretending features already exist.</p></div>
-<div class="timeline reveal">
-<div class="step active"><span>01</span><b>Foundation</b><p>Concept, visual direction and core flight-sim foundation.</p></div>
-<div class="step"><span>02</span><b>Prototype</b><p>First playable systems, aircraft work and early environments.</p></div>
-<div class="step"><span>03</span><b>Testing</b><p>Community testing once there is a meaningful build to fly.</p></div>
-</div>
+<section class="development" id="development">
+  <div class="dev-header reveal">
+    <div class="section-index">03</div>
+    <div class="eyebrow">DEVELOPMENT</div>
+    <h2>Early days.<br><em>Big ambitions.</em></h2>
+    <p>There is no playable build yet. Atlas FS has only just entered development, so this site is a look at the direction rather than a list of finished features.</p>
+  </div>
+  <div class="dev-rail reveal">
+    <div class="dev-line"></div>
+    <article class="dev-step active"><span>01</span><small>NOW</small><h3>Foundation</h3><p>Visual identity, world direction and core flight-sim planning.</p></article>
+    <article class="dev-step"><span>02</span><small>NEXT</small><h3>Prototype</h3><p>First playable systems, aircraft work and an early environment.</p></article>
+    <article class="dev-step"><span>03</span><small>LATER</small><h3>Testing</h3><p>Community testing once there is something meaningful to fly.</p></article>
+  </div>
 </section>
 
-<section class="section community">
-<div class="community-box glass reveal"><div><label>ATLAS COMMUNITY</label><h2>Get on board<br>from day one.</h2><p>Follow development, talk aviation and be there when Atlas FS is ready to fly.</p></div><div class="actions vertical"><button class="primary" data-action="discord">Join Discord <span>↗</span></button><button class="secondary" data-action="coffee">Support Atlas <span>↗</span></button></div></div>
+<section class="community reveal">
+  <div class="community-orbit"></div>
+  <div>
+    <div class="eyebrow">ATLAS COMMUNITY</div>
+    <h2>Be there<br><em>from day one.</em></h2>
+    <p>Follow development, share aviation ideas and help shape what Atlas becomes.</p>
+  </div>
+  <div class="community-actions">
+    <button class="primary-button" data-action="discord">Join Discord <span>↗</span></button>
+    <button class="glass-button" data-action="coffee">Support Atlas <span>↗</span></button>
+  </div>
 </section>
 </main>
-<footer><div class="brand"><span class="brand-mark">A</span><span><b>Atlas</b><small>Flight Simulator</small></span></div><span>Atlas FS · Coming Soon</span><span>© <span id="year"></span></span></footer>
-<div class="modal" id="modal" aria-hidden="true"><div class="backdrop" data-close></div><div class="modal-box glass"><button data-close>×</button><label id="modal-label">ATLAS FS</label><h2 id="modal-title">Coming soon.</h2><p id="modal-text"></p><button class="primary" data-close>Back to Atlas</button></div></div>
-<script src="config.js"></script><script src="globe.js"></script><script src="app.js"></script>
-</body></html>
+
+<footer>
+  <a class="brand" href="#top"><span class="brand-mark">A</span><span><strong>Atlas</strong><small>Flight Simulator</small></span></a>
+  <span>Atlas FS • Coming Soon</span>
+  <span>© <span id="year"></span></span>
+</footer>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-box glass-panel">
+    <button class="modal-close" data-close>×</button>
+    <div class="eyebrow" id="modal-label">ATLAS FS</div>
+    <h2 id="modal-title">Coming soon.</h2>
+    <p id="modal-text"></p>
+    <button class="primary-button" data-close>Back to Atlas</button>
+  </div>
+</div>
+
+<script src="config.js"></script>
+<script src="globe.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
